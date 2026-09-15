@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Bazar | Product</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="product-body">
+
+<header class="header">
+
+  <div class="topbar">
+
+    <a href="index.html" class="back-btn">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <h2>Bag <span>Bazar</span></h2>
+    </div>
+
+    <div class="icons">
+      <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+
+      <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+      </a>
+    </div>
+
+  </div>
+
+</header>
+
+<main class="product-page">
+
+  <section class="product-gallery">
+
+    <div class="main-image">
+      <span class="badge">BESTSELLER</span>
+
+      <img id="mainProductImage" src="images/p1.jpg" alt="Bag Product">
+    </div>
+
+    <div class="thumbs">
+
+      <img class="thumb active" src="images/p1.jpg" alt="">
+      <img class="thumb" src="images/p2.jpg" alt="">
+      <img class="thumb" src="images/p3.jpg" alt="">
+      <img class="thumb" src="images/p4.jpg" alt="">
+      <img class="thumb" src="images/p5.jpg" alt="">
+
+    </div>
+
+  </section>
+
+  <section class="product-info">
+
+    <h1 id="productName">
+      Premium Leather Office Bag
+    </h1>
+
+    <div class="price-row">
+
+      <h2 id="productPrice">৳1,499</h2>
+
+      <span class="old-price">৳2,499</span>
+
+      <span class="discount">40% OFF</span>
+
+    </div>
+        <div class="option-box">
+      <h3>Color</h3>
+
+      <div class="color-options">
+        <button class="color active" style="background:#8B7355;"></button>
+        <button class="color" style="background:#000000;"></button>
+        <button class="color" style="background:#E91E63;"></button>
+      </div>
+    </div>
+
+    <div class="option-box">
+      <h3>Quantity</h3>
+
+      <div class="qty-box">
+        <button id="minusQty">−</button>
+        <span id="qtyValue">1</span>
+        <button id="plusQty">+</button>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button class="wishlist-btn">
+        <i class="fa-regular fa-heart"></i>
+        Wishlist
+      </button>
+
+      <button class="cart-btn" id="addCartBtn">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Add to Cart
+      </button>
+    </div>
+
+    <button class="buy-btn" id="buyNowBtn">
+      Buy Now
+    </button>
+
+    <div class="payment-methods">
+      <div class="pay-item cod">
+        <i class="fa-solid fa-money-bill-wave"></i>
+        <span>Cash on Delivery</span>
+      </div>
+
+      <div class="pay-item">
+        <span class="bkash">bKash</span>
+      </div>
+
+      <div class="pay-item">
+        <span class="nagad">Nagad</span>
+      </div>
+
+      <div class="pay-item">
+        <i class="fa-regular fa-credit-card"></i>
+        <span>Card</span>
+      </div>
+    </div>
+
+    <div class="description">
+      <h3>Description</h3>
+
+      <p id="productDescription">
+        Premium quality leather office bag with multiple compartments, smooth zipper, adjustable shoulder strap and durable water-resistant material. Perfect for office, college and everyday use.
+      </p>
+    </div>
+
+  </section>
+  <nav class="bottom-nav">
+
+  <a href="index.html" class="active">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="wishlist.html">
+    <i class="fa-regular fa-heart"></i>
+    <span>Wishlist</span>
+  </a>
+
+  <a href="cart.html">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span>Cart</span>
+  </a>
+
+  <a href="login.html">
+    <i class="fa-regular fa-user"></i>
+    <span>Account</span>
+  </a>
+
+</nav>
+
+<script src="product.js"></script>
+</body>
+</html>
