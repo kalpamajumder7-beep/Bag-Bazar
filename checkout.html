@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Bazar | Checkout</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="checkout-body">
+
+<header class="header">
+  <div class="topbar">
+    <a href="cart.html"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <h2>Bag <span>Bazar</span></h2>
+    </div>
+
+    <div style="width:24px;"></div>
+  </div>
+</header>
+
+<main class="checkout-page">
+
+  <h1>Checkout</h1>
+  <p class="sub">Complete your delivery details</p>
+
+  <form id="checkoutForm">
+
+    <label>Full Name</label>
+    <input type="text" id="name" required>
+
+    <label>Phone Number</label>
+    <input type="tel" id="phone" required>
+
+    <label>District</label>
+    <input type="text" id="district" required>
+
+    <label>Postal Code</label>
+    <input type="text" id="postal" required>
+
+    <label>Full Address</label>
+    <textarea id="address" rows="4" required></textarea>
+        <h2 class="payment-title">Payment Method</h2>
+
+    <div class="payment-options">
+
+      <label class="pay-card active">
+        <input type="radio" name="payment" value="cod" checked>
+        <i class="fa-solid fa-money-bill-wave"></i>
+        <div>
+          <h3>Cash on Delivery</h3>
+          <p>Pay after receiving your order</p>
+        </div>
+      </label>
+
+      <label class="pay-card">
+        <input type="radio" name="payment" value="bkash">
+        <span class="bkash">bKash</span>
+        <div>
+          <h3>bKash Payment</h3>
+          <p>Online payment</p>
+        </div>
+      </label>
+
+      <label class="pay-card">
+        <input type="radio" name="payment" value="nagad">
+        <span class="nagad">Nagad</span>
+        <div>
+          <h3>Nagad Payment</h3>
+          <p>Online payment</p>
+        </div>
+      </label>
+
+      <label class="pay-card">
+        <input type="radio" name="payment" value="card">
+        <i class="fa-regular fa-credit-card"></i>
+        <div>
+          <h3>Visa / Mastercard</h3>
+          <p>Secure card payment</p>
+        </div>
+      </label>
+
+    </div>
+
+    <div class="checkout-summary">
+      <div class="row">
+        <span>Delivery Charge</span>
+        <strong>৳80</strong>
+      </div>
+
+      <div class="row total">
+        <span>Total</span>
+        <strong id="checkoutTotal">৳0</strong>
+      </div>
+    </div>
+        <button type="submit" class="place-order-btn">
+      Place Order
+    </button>
+
+  </form>
+
+</main>
+
+<nav class="bottom-nav">
+
+  <a href="index.html">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="wishlist.html">
+    <i class="fa-regular fa-heart"></i>
+    <span>Wishlist</span>
+  </a>
+
+  <a href="cart.html">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span>Cart</span>
+  </a>
+
+  <a href="login.html">
+    <i class="fa-regular fa-user"></i>
+    <span>Account</span>
+  </a>
+
+</nav>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>
