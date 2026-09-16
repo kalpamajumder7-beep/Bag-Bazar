@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Bazar | Cart</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="cart-body">
+
+<header class="header">
+  <div class="topbar">
+    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <h2>Bag <span>Bazar</span></h2>
+    </div>
+
+    <a href="wishlist.html">
+      <i class="fa-regular fa-heart"></i>
+    </a>
+  </div>
+</header>
+
+<main class="cart-page">
+
+  <div class="page-title">
+    <h1>Your Cart</h1>
+    <p>Review your selected products</p>
+  </div>
+
+  <div id="cartItems" class="cart-items">
+    <!-- Products will load here -->
+  </div>
+    <section class="summary-card">
+
+    <h2>Order Summary</h2>
+
+    <div class="row">
+      <span>Subtotal</span>
+      <span id="subtotal">৳0</span>
+    </div>
+
+    <div class="row">
+      <span>Delivery</span>
+      <span>৳80</span>
+    </div>
+
+    <div class="row total">
+      <strong>Total</strong>
+      <strong id="total">৳80</strong>
+    </div>
+
+  </section>
+
+  <div class="cart-actions">
+
+    <button id="clearCart" class="clear-btn">
+      Clear Cart
+    </button>
+
+    <button onclick="location.href='checkout.html'" class="checkout-btn">
+      Proceed to Checkout
+    </button>
+
+  </div>
+  </main>
+
+<footer class="footer">
+
+  <div class="footer-main">
+
+    <div class="brand">
+      <h2>Bag <span>Bazar</span></h2>
+      <p>Premium Bags in Bangladesh</p>
+    </div>
+
+    <div class="contact">
+      <p>📍 Lakshmipur, Bangladesh</p>
+      <p>✉ support@bagbazar.com</p>
+      <p>☎ +8801XXXXXXXXX</p>
+    </div>
+
+  </div>
+
+  <p class="copy">
+    © 2026 Bag Bazar. All Rights Reserved.
+  </p>
+
+</footer>
+
+<nav class="bottom-nav">
+
+  <a href="index.html">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="wishlist.html">
+    <i class="fa-regular fa-heart"></i>
+    <span>Wishlist</span>
+  </a>
+
+  <a class="active" href="cart.html">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span>Cart</span>
+  </a>
+
+  <a href="login.html">
+    <i class="fa-regular fa-user"></i>
+    <span>Account</span>
+  </a>
+
+</nav>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
