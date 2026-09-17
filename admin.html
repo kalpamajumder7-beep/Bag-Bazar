@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Bazar Admin</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="admin-body">
+
+<header class="header">
+  <div class="topbar">
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <h2>Bag <span>Bazar</span> Admin</h2>
+    </div>
+  </div>
+</header>
+
+<main class="admin-page">
+
+<section class="admin-card">
+
+  <h2>Add New Product</h2>
+
+  <input type="text" id="productName" placeholder="Product Name">
+
+  <input type="number" id="productPrice" placeholder="Price">
+
+  <input type="text" id="productDiscount" placeholder="Discount %">
+
+  <textarea id="productDescription" rows="3"
+    placeholder="Product Description"></textarea>
+
+  <input type="text" id="productImage"
+    placeholder="Image URL">
+
+  <select id="productCategory">
+    <option>Travel Bag</option>
+    <option>Trolly</option>
+    <option>Office Bag</option>
+    <option>College Bag</option>
+    <option>Chest Bag</option>
+    <option>Shoulder Bag</option>
+    <option>Cycle Bag</option>
+    <option>Collection Bag</option>
+    <option>Hand Bag</option>
+    <option>Ladies Purse</option>
+    <option>Money Bag</option>
+  </select>
+
+  <button id="addProductBtn" class="auth-btn">
+    Add Product
+  </button>
+
+</section>
+<section class="admin-card">
+
+  <h2>Manage Categories</h2>
+
+  <div class="row-input">
+    <input type="text" id="newCategory" placeholder="New Category Name">
+    <button id="addCategoryBtn">Add</button>
+  </div>
+
+  <div id="categoryList" class="admin-list">
+    <!-- Categories load here -->
+  </div>
+
+</section>
+
+<section class="admin-card">
+
+  <h2>All Products</h2>
+
+  <div id="productList" class="admin-list">
+    <!-- Products load here -->
+  </div>
+
+</section>
+
+<section class="admin-card">
+
+  <h2>Customer Orders</h2>
+
+  <div id="orderList" class="admin-list">
+    <!-- Orders load here -->
+  </div>
+
+</section>
+</main>
+
+<nav class="bottom-nav">
+
+  <a href="index.html">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="wishlist.html">
+    <i class="fa-regular fa-heart"></i>
+    <span>Wishlist</span>
+  </a>
+
+  <a href="cart.html">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span>Cart</span>
+  </a>
+
+  <a href="profile.html">
+    <i class="fa-regular fa-user"></i>
+    <span>Account</span>
+  </a>
+
+</nav>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
