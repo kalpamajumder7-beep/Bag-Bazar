@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Bazar | Category</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="category-body">
+
+<header class="header">
+  <div class="topbar">
+
+    <a href="index.html">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <h2>Bag <span>Bazar</span></h2>
+    </div>
+
+    <div style="width:24px;"></div>
+
+  </div>
+</header>
+
+<main class="category-page">
+
+  <div class="page-title">
+    <h1 id="categoryTitle">Category</h1>
+    <p>Explore all bags in this category</p>
+  </div>
+
+  <div id="categoryProducts" class="product-grid">
+    <!-- Products load from category.js -->
+  </div>
+ <section class="category-filter">
+
+  <div class="filter-row">
+    <span>Sort By</span>
+
+    <select id="sortProducts">
+      <option value="default">Default</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+    </select>
+  </div>
+
+</section>
+
+<section class="category-info">
+
+  <div class="info-card">
+    <i class="fa-solid fa-box-open"></i>
+    <div>
+      <h3 id="productCount">0 Products</h3>
+      <p>Available in this category</p>
+    </div>
+  </div>
+
+</section>
+  </main>
+
+<nav class="bottom-nav">
+
+  <a href="index.html">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="wishlist.html">
+    <i class="fa-regular fa-heart"></i>
+    <span>Wishlist</span>
+  </a>
+
+  <a href="cart.html">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span>Cart</span>
+  </a>
+
+  <a href="profile.html">
+    <i class="fa-regular fa-user"></i>
+    <span>Profile</span>
+  </a>
+
+</nav>
+
+<script src="category.js"></script>
+
+</body>
+</html>
